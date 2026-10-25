@@ -696,6 +696,50 @@
     </div>
   </footer>
 
+/* WHAT WE CREATE — outlined service cards */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 40px;
+}
+
+.service-card {
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  padding: 28px 22px;
+  background: transparent;
+  transition: border-color 0.3s ease,
+              transform 0.3s ease;
+}
+
+.service-card:hover {
+  border-color: #9D174D;
+  transform: translateY(-3px);
+}
+
+.service-card h3 {
+  color: #ffffff;
+}
+
+.service-card p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.service-number {
+  color: #9D174D;
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .service-card {
+    padding: 24px 18px;
+  }
+}
+  
 <script>
   document.getElementById("year").textContent =
     new Date().getFullYear();
