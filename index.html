@@ -458,9 +458,7 @@
       <div class="hero-bottom">
         
 <a class="button"
-   href="https://wa.me/2347034513158text=Hello%20Peaceful%20Visuals%2C%20I%27m%20interested%20in%20working%20with%20you."
-   target="_blank"
-   rel="noopener noreferrer">
+   https://wa.me/2347034513158?text=Hello%20Peaceful%20Visuals%2C%20I%27m%20interested%20in%20working%20with%20you
   Book a Project on WhatsApp ↗
 </a>
 
@@ -723,31 +721,33 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
-  </
-document.getElementById("project-form").addEventListener("submit", function(event) {
-  event.preventDefault();
+<script>
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
 
-  const form = event.target;
-  const name = form.elements["name"].value.trim();
-  const service = form.elements["service"].value;
-  const brief = form.elements["brief"].value.trim();
+  document.getElementById("project-form").addEventListener("submit", function(event) {
+    event.preventDefault();
 
-  const message =
-    "Hello Peaceful Visuals! I'd like to discuss a project.\n\n" +
-    "Name: " + name + "\n" +
-    "Service: " + service + "\n" +
-    "Project details: " + brief;
+    const form = event.target;
+    const name = form.elements["name"].value.trim();
+    const service = form.elements["service"].value;
+    const brief = form.elements["brief"].value.trim();
 
-  const phone = "2347034513158";
-  window.open(
-    "https://wa.me/" + phone + "?text=" + encodeURIComponent(message),
-    "_blank"
-  );
-});
-    >
+    const message =
+      "Hello Peaceful Visuals! I'd like to discuss a project.\n\n" +
+      "Name: " + name + "\n" +
+      "Service: " + service + "\n" +
+      "Project details: " + brief;
+
+    const phone = "2347034513158";
+
+    window.open(
+      "https://wa.me/" + phone + "?text=" + encodeURIComponent(message),
+      "_blank"
+    );
+  });
+</script>
+
 
 </body>
   </html>
