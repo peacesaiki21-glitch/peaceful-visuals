@@ -664,7 +664,28 @@
   <script>
     document.getElementById("year").textContent =
       new Date().getFullYear();
-  </script>
+  </
+document.getElementById("project-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const form = event.target;
+  const name = form.elements["name"].value.trim();
+  const service = form.elements["service"].value;
+  const brief = form.elements["brief"].value.trim();
+
+  const message =
+    "Hello Peaceful Visuals! I'd like to discuss a project.\n\n" +
+    "Name: " + name + "\n" +
+    "Service: " + service + "\n" +
+    "Project details: " + brief;
+
+  const phone = "2347034513158";
+  window.open(
+    "https://wa.me/" + phone + "?text=" + encodeURIComponent(message),
+    "_blank"
+  );
+});
+    >
 
 </body>
   </html>
