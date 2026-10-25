@@ -420,7 +420,104 @@
         padding: 32px 20px;
       }
     }
-  </style>
+  </style> 
+  
+/* SERVICES SECTION */
+.services {
+  padding: 90px 6%;
+  background: #111111;
+  color: #FFFFFF;
+}
+
+.services .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.services .eyebrow {
+  color: #9D174D;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+
+.services h2 {
+  font-size: clamp(32px, 5vw, 54px);
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+  margin-bottom: 20px;
+}
+
+.services .section-description {
+  max-width: 560px;
+  color: #BBBBBB;
+  line-height: 1.8;
+  margin-bottom: 42px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 35px;
+}
+
+.service-card {
+  padding: 28px;
+  border: 1px solid #333333;
+  background: #171717;
+  transition: border-color 0.3s ease,
+              transform 0.3s ease;
+}
+
+.service-card:hover {
+  border-color: #9D174D;
+  transform: translateY(-4px);
+}
+
+.service-number {
+  display: block;
+  color: #9D174D;
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+
+.service-card h3 {
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  color: #BBBBBB;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.services .button {
+  display: inline-block;
+  padding: 14px 22px;
+  background: #9D174D;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .services {
+    padding: 65px 6%;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    padding: 24px;
+  }
+}
+  
 </head>
 
 <body>
@@ -582,7 +679,68 @@
       </div>
     </section>
 
-    <section class="section" id="services">
+  
+<section class="services" id="services">
+  <div class="container">
+    <p class="eyebrow">WHAT WE DO</p>
+
+    <h2>Creative services for brands<br>with something to say.</h2>
+
+    <p class="section-description">
+      We combine strategy, design, and storytelling
+      to turn ideas into meaningful visual experiences.
+    </p>
+
+    <div class="services-grid">
+
+      <article class="service-card">
+        <span class="service-number">01</span>
+        <h3>Brand Identity Design</h3>
+        <p>
+          Building distinctive brand identities through
+          logo design, typography, colour systems, and
+          visual guidelines that help businesses stand out.
+        </p>
+      </article>
+
+      <article class="service-card">
+        <span class="service-number">02</span>
+        <h3>Packaging Design</h3>
+        <p>
+          Creating thoughtful, memorable packaging that
+          communicates product value and delivers a
+          cohesive brand experience.
+        </p>
+      </article>
+
+      <article class="service-card">
+        <span class="service-number">03</span>
+        <h3>Graphic Design</h3>
+        <p>
+          Designing impactful visuals for social media,
+          campaigns, promotional materials, and
+          digital communication.
+        </p>
+      </article>
+
+      <article class="service-card">
+        <span class="service-number">04</span>
+        <h3>Film &amp; Visual Storytelling</h3>
+        <p>
+          Crafting cinematic visuals and short films
+          that communicate ideas, capture moments,
+          and connect with audiences.
+        </p>
+      </article>
+
+    </div>
+
+    <a class="button" href="#contact">
+      Let's Work Together ↗
+    </a>
+  </div>
+  </section>
+  >
       <div class="container">
         <div class="section-heading">
           <div>
